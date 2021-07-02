@@ -5,9 +5,9 @@ Files and tips for modifying the **msmbstyle** Bookdown style to look like [The 
 
 You may intend your book to be in the Tufte style, as in [tufte-css](https://edwardtufte.github.io/tufte-css/) or [tufte-latex](https://www.ctan.org/pkg/tufte-latex?lang=en). Tufte-style books contain a number of stylistic decisions that imitate the formatting of Edward Tufte, perhaps the most prominent (and difficult to find a template for) being the sidenotes, margin notes, and `newthought` smallcaps minisection-starters. There are options for doing that in regular **bookdown** with its [Tufte-style outputs](https://bookdown.org/yihui/rmarkdown/bookdown-output.html).
 
-[msmbstyle](https://github.com/grimbough/msmbstyle) is an R package that is, as far as I can tell, the only restyling option for **bookdown** output to a Tufte-style HTML book. It looks pretty nice! Certainly much more like you'd expect an HTML book to look.
+[msmbstyle](https://github.com/grimbough/msmbstyle) is an R package that is, as far as I can tell, the only restyling option for **bookdown** output to a Tufte-style HTML book. It looks good! Certainly much more like you'd expect an HTML book to look than the standard `tufte_html_book()` output.
 
-I will point out that if your goal is an HTML book and you are ambivalent about the whole sidenote thing, I'd recommend not going for a Tufte-style book. You're going to have way more options, much better-supported options, and much less headache, using the standard **bookdown** styles, or something like [bs4_book](https://pkgs.rstudio.com/bookdown/reference/bs4_book.html).
+I will point out that if your goal is an HTML book and you are ambivalent about the whole sidenote thing, I'd recommend not going for a Tufte-style book. You're going to have way more options, with bigger support teams behind them, using the standard **bookdown** styles, like [bs4_book](https://pkgs.rstudio.com/bookdown/reference/bs4_book.html).
 
 The sidenotes were pretty important to me! But there were several aspects of **msmbstyle** I wanted to change. This repo contains files and examples that include:
 
