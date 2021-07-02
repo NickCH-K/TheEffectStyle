@@ -1,0 +1,76 @@
+---
+title: "The Effect"
+subtitle: "An Introduction to Research Design and Causality"
+author: "Nick Huntington-Klein"
+knit: "bookdown::preview_chapter"
+site: "bookdown::bookdown_site"
+bibliography: CI-library.bib
+author-note: "Nick Huntington-Klein is an economics professor at Seattle University. See more on his site at nickchk.com, or find him on Twitter at nickchk."
+dedication: ""
+copyright-year: "2021"
+description: "The Effect is a textbook that covers the basics and concepts of research design, especially as applied to causal inference from observational data."
+disclaimer: "This version: `r Sys.Date()`."
+pandoc-crossref: yes
+crossrefYaml: "./pandoc-crossref-settings.yaml"
+link-citations: yes
+output:
+  msmbstyle::msmb_html_book:
+      highlight: pygments
+      toc: TRUE
+      toc_depth: 1
+      split_by: chapter
+      split_bib: no
+      margin_references: FALSE
+      output_file: the-effect
+      css: css.css
+      includes:
+        in_header: renumber_sidenotes.html
+---
+
+---
+nocite: |
+  @citationsforthebibliographyyoudontciteintext
+...
+
+
+```{r, include = FALSE, eval = TRUE}
+knitr::opts_chunk$set(eval = TRUE, echo = FALSE, cache = TRUE, message = FALSE, warning = FALSE)
+library(tufte)
+# https://rstudio.github.io/tufte/
+# https://bookdown.org/
+# For the code tab-selection:
+# install with remotes::install('gadenbuie/xaringanExtra')
+xaringanExtra::use_panelset()
+xaringanExtra::style_panelset_tabs(active_foreground = "#ea6721")
+
+# If using modelsummary, this is necessary to properly center the output
+library(modelsummary)
+options(modelsummary_theme_kableExtra = function(x, ...) x)
+```
+
+An unnumbered chapter title like "Introduction":
+
+# The Effect: An Introduction to Research Design and Causality {-}
+
+An example tab-code-selection set of panels. There's nothing baked in about the languages here; any language (or probably even non-code) would work.
+
+:::::{.panelset}
+:::{.panel}
+[R Code]{.panel-name}
+```{r, echo = TRUE, eval = FALSE}
+library(tidyverse); library(modelsummary)
+```
+:::
+:::{.panel}
+[Stata Code]{.panel-name}
+```{stata, echo = TRUE, eval = FALSE}
+* ssc install causaldata if you haven't yet!
+```
+:::
+:::{.panel}
+[Python Code]{.panel-name}
+```{python, echo = TRUE, eval = FALSE}
+import pandas as pd
+```
+:::
+:::::
