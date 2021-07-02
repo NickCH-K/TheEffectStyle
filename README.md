@@ -12,7 +12,7 @@ I will point out that if your goal is an HTML book and you are ambivalent about 
 The sidenotes were pretty important to me! But there were several aspects of **msmbstyle** I wanted to change. This repo contains files and examples that include:
 
 - How to restart the sidenote numbering in each chapter (`renumber_sidenotes.html`).
-- How to move the chapter selection dropdown menu to instead be an always-on sidebar that reverts to the dropdown when the window shrinks (`css.css`)
+- How to move the chapter selection dropdown menu to instead be an always-on sidebar that reverts to the dropdown when the window shrinks, and some other minor fixes (`css.css`)
 - How to do the tab-selection code chunks like in [this section](https://theeffectbook.net/ch-StatisticalAdjustment.html#coding-up-a-regression) (this one has nothing to do with **msmbstyle** or Tufte exactly)
 - My example YAML from [The Effect](https://theeffectbook.net), which includes the options that extended the section numbering as well as some other things.
 
