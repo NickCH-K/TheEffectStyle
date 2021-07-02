@@ -1,0 +1,53 @@
+.eqn-mouseover {
+              display: flex;
+              align-items: flex-start;
+              justify-content: flex-start;
+              padding-right: 50%;
+}
+
+@media only screen and (min-width : 761px) {
+              a.dropbtn {
+                             display: none;
+              }
+
+              div.dropdown-content {
+                             display: block;
+                             position: fixed;
+                             overflow-y:scroll;
+                             top: 0px;
+                             left: 0px;
+                             height: 100%;
+                             width: 20%;
+                             float: left;
+              }
+
+              html {
+                             padding-left: 10%
+              }
+}
+
+.panel-active section {
+		padding-top: 0;
+}
+
+ul.navbar {
+		background-color: #167a4f;
+}
+
+#active-page {
+		background-color: #167a4f;
+}
+
+li.toc {
+		background-color: #21b575;
+}
+
+h1 {
+	color: #167a4f;
+	border-bottom-color: #167a4f;
+}
+
+h2 {
+	color: #167a4f;
+	border-bottom-color: #167a4f;
+}

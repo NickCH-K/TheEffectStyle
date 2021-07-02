@@ -1,0 +1,28 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    var element_label= $("label[for *= 'tufte-sn-']");
+    var count = $(element_label).length;
+    $(element_label).each(function( index ) {
+      //console.log( ++index + ": " + $( this ).text() );
+      $(this).attr('for','tufte-sn-'+ ++index);
+      $(this).text(index);
+    });
+  });
+  $(document).ready(function () {
+    var element_input= $("input[id *= 'tufte-sn-']");
+    var count = $(element_input).length;
+    $(element_input).each(function( index ) {
+      //console.log( ++index + ": " + $( this ).text() );
+      $(this).attr('id','tufte-sn-'+ ++index);
+    }); 
+  });
+  $(document).ready(function () {
+    var element_span= $("span[class *= 'sidenote-number']");
+    var count = $(element_span).length;
+    $(element_span).each(function( index ) {
+      //console.log( ++index + ": " + $( this ).text() );
+      $(this).text(++index);
+    }); 
+  });
+</script>
