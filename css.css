@@ -1,3 +1,4 @@
+/* Numbered equations have a tendency not to be centered properly. This fixes that. */
 .eqn-mouseover {
               display: flex;
               align-items: flex-start;
@@ -5,6 +6,7 @@
               padding-right: 50%;
 }
 
+/* This is the CSS that moves the chapter selection to be the always-on sidebar. Switches back to a dropdown at 760px wide or less (phone screens, shrunken browsers) */
 @media only screen and (min-width : 761px) {
               a.dropbtn {
                              display: none;
@@ -26,10 +28,12 @@
               }
 }
 
+/* Removes some blank space in the code-tabs from xaringanExtra */
 .panel-active section {
 		padding-top: 0;
 }
 
+/* Coloring choices specific to The Effect */
 ul.navbar {
 		background-color: #167a4f;
 }
