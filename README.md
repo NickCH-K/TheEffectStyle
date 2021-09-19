@@ -13,12 +13,22 @@ The sidenotes were pretty important to me! But there were several aspects of **m
 
 - How to restart the sidenote numbering in each chapter (`renumber_sidenotes.html`).
 - How to move the chapter selection dropdown menu to instead be an always-on sidebar that reverts to the dropdown when the window shrinks, and some other minor fixes (`css.css`)
+- How to add a search bar (see below)
 - How to do the tab-selection code chunks like in [this section](https://theeffectbook.net/ch-StatisticalAdjustment.html#coding-up-a-regression) (this one has nothing to do with **msmbstyle** or Tufte exactly)
 - My example YAML from [The Effect](https://theeffectbook.net), which includes the options that extended the section numbering as well as some other things.
 
-The latter two are both in `index.RMD`.
+The latter two are both in `index.RMD`. The code for sidenote renumbering and the search bar (except for `add_searchbar.R`) were written by [Atin Gupta](https://www.upwork.com/freelancers/~01b346e20aea8ac5f3) who does very good work and who you should patronize if you need any coding done.
 
-Ideally I will figure out how to add the search bar that you'd expect to find in an HTML book, and will add that here too.
+## How to Add a Search Bar
+
+- Add the `jquery.mark.min.js` and `myscript.php` files to the same folder as all the `html` output documents for your book.
+- Modify line 10 of `myquery.js` to point to the URL of your book rather than to [theeffectbook.net](theeffectbook.net), and then put that in the same folder with all your `html` output documents
+- Modify lines 6 and (possibly, if you've changed the default **bookdown** settings) 4 of `add_searchbar.R` to reflect the folder name in which your `html` output documents are, and the full title of your book.
+- Each time you render your book, run `add_searchbar.R` afterwards to add the search bar code in the appropriate locations in your `html` output files
+
+The search bar will only work on a live server. The bar will show up but search won't function properly if it's running on your local machine.
+
+If you happen to know how to modify this code so it will jump to the section or first text presence on a page rather than just the chapter, please do and let me know!
 
 ## Disclaimers:
 
